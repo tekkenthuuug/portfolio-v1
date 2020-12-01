@@ -1,0 +1,12 @@
+.items {
+  display: grid;
+  grid-gap: 12px;
+  align-items: center;
+
+  text-align: center;
+  width: 33px;
+
+  color: var(--primary-color);
+
+  margin-bottom: 12px;
+}

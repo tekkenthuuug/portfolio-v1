@@ -1,0 +1,45 @@
+.wrapper {
+  color: var(--primary-color);
+
+  display: flex;
+  justify-content: center;
+  padding-top: 260px;
+}
+
+.name-is {
+  margin-left: 4px;
+
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-size: 1.2em;
+}
+
+.name {
+  font-size: 4.2em;
+}
+
+.speciality {
+  font-size: 4.3em;
+  color: var(--secondary-color);
+}
+
+.skills {
+  margin-top: 8px;
+
+  font-family: var(--secondary-font);
+  max-width: 670px;
+  font-size: 1.7em;
+  color: var(--text-color);
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -75px;
+}

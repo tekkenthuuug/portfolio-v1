@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --background-color: #343758;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
+  --primary-color: #b8c8fb;
+  --secondary-color: #9cb4ff;
+  --text-color: #a6a8c2;
+}
+
+html,
+body {
+  font-family: var(--primary-font);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+
+  &-track {
+    background: #343758;
+  }
+
+  &-thumb {
+    background: #4d5285;
+
+    &:hover {
+      background: #6b7bad;
+    }
+  }
+}

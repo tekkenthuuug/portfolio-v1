@@ -1,0 +1,18 @@
+.container {
+  position: fixed;
+  top: 40vh;
+  right: 60px;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 100;
+}
+
+.item {
+  width: 15px;
+  height: 15px;
+  background-color: #7f83ab;
+  border-radius: 50%;
+  margin: 7px 0;
+}
