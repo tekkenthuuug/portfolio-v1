@@ -10,4 +10,10 @@
   justify-content: space-between;
 
   padding: 0 60px;
+
+  transition: bottom 0.25s ease-in 0.2s;
+}
+
+.container-lower {
+  bottom: -140px;
 }

@@ -6,7 +6,7 @@ import NextSectionArrow from '../next-section-arrow/next-section-arrow';
 
 const GreetingSection = ({ setSlide }) => {
   return (
-    <SectionWrapper className={styles.wrapper} id='greeting'>
+    <SectionWrapper className={styles.wrapper}>
       <h4 className={styles['name-is']}>Hi, my name is</h4>
       <h1 className={styles.name}>Maksim Pautsina</h1>
       <h1 className={styles.speciality}>I'm a Full Stack Web Developer</h1>

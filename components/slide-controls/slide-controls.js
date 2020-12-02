@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import styles from './slide-controls.module.scss';
-import { sectionAnchors } from '../../constants';
 
 const SlideControls = ({
+  slidesCount,
   getCurrentSlideIndex,
   scrollToSlide,
   slideToScrollTo,
+  ...p
 }) => {
   // scrolling is controlled by react-full-page,
   // but highlighting current section with own calculations,
@@ -35,9 +36,11 @@ const SlideControls = ({
     }
   }, [slideToScrollTo]);
 
+  const sections = useMemo(() => [...Array(slidesCount).keys()], [slidesCount]);
+
   return (
     <div className={styles.container}>
-      {sectionAnchors.map((id, i) => (
+      {sections.map((id, i) => (
         <div
           key={id}
           onClick={() => scrollToSlide(i)}

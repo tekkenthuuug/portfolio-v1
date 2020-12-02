@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="900" viewBox="0 0 1920 900">
-  <g id="BackT" transform="translate(0 -5.609)">
-    <path id="Path_7" data-name="Path 7" d="M1920,969.392,0,69.391H1920Z" transform="translate(0 -63.783)" fill="#333655"/>
-    <path id="Path_6" data-name="Path 6" d="M1711.144,963.592,0,69.391H1711.144Z" transform="translate(208.856 -63.783)" fill="#383b5e"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="2242.5" height="900.069" viewBox="0 0 2242.5 900.069">
+  <g id="BackT" transform="translate(321.022 -7.758)">
+    <path id="Path_7" data-name="Path 7" d="M1921.478,971.61l-2242.5-900L1921.41,71.6Z" transform="translate(0 -63.783)" fill="#333655"/>
+    <path id="Path_6" data-name="Path 6" d="M1712.622,965.811-207.409,71.61l1920.021-.069Z" transform="translate(208.856 -63.783)" fill="#383b5e"/>
   </g>
 </svg>

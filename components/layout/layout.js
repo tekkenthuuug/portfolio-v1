@@ -1,9 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '../header/header';
-import FixedLinks from '../fixed-links/fixed-links';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, slide }) => {
   return (
     <div>
       <Head>
@@ -12,7 +11,6 @@ const Layout = ({ children }) => {
       </Head>
       <Header />
       {children}
-      <FixedLinks />
     </div>
   );
 };

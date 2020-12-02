@@ -2,9 +2,15 @@ import React from 'react';
 import Grabber from '../grabber/grabber';
 import styles from './fixed-links.module.scss';
 
-const FixedLinks = () => {
+const FixedLinks = ({ slide }) => {
+  let containerClassName = styles.container;
+
+  if (slide.id > 0) {
+    containerClassName += ` ${styles['container-lower']}`;
+  }
+
   return (
-    <div className={styles.container}>
+    <div className={containerClassName}>
       <Grabber>
         <img src='socials/github.svg' />
         <img src='socials/linkedin.svg' />
