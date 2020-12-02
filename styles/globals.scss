@@ -42,17 +42,16 @@ h6 {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 0px;
+  // &-track {
+  //   background: #343758;
+  // }
 
-  &-track {
-    background: #343758;
-  }
+  // &-thumb {
+  //   background: #4d5285;
 
-  &-thumb {
-    background: #4d5285;
-
-    &:hover {
-      background: #6b7bad;
-    }
-  }
+  //   &:hover {
+  //     background: #6b7bad;
+  //   }
+  // }
 }

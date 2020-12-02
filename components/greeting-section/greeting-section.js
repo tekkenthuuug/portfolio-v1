@@ -1,10 +1,10 @@
 import React from 'react';
 import SectionWrapper from '../section-wrapper/section-wrapper';
 import CustomButton from '../custom-button/custom-button';
-import NextSectionArrow from '../next-section-arrow/next-section-arrow';
 import styles from './greeting-section.module.scss';
+import NextSectionArrow from '../next-section-arrow/next-section-arrow';
 
-const GreetingSection = () => {
+const GreetingSection = ({ setSlide }) => {
   return (
     <SectionWrapper className={styles.wrapper} id='greeting'>
       <h4 className={styles['name-is']}>Hi, my name is</h4>
@@ -14,8 +14,16 @@ const GreetingSection = () => {
         High level of personal and professional integrity with the ability to
         easily adapt to changing environments
       </h4>
-      <CustomButton className={styles.button}>See my projects</CustomButton>
-      <NextSectionArrow className={styles.arrow} />
+      <CustomButton
+        className={styles.button}
+        onClick={() => setSlide({ id: 1 })}
+      >
+        See my projects
+      </CustomButton>
+      <NextSectionArrow
+        className={styles.arrow}
+        onClick={() => setSlide({ id: 1 })}
+      />
     </SectionWrapper>
   );
 };
