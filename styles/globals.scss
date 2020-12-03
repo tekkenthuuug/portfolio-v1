@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
   --background-color: #343758;
@@ -7,7 +7,6 @@
   --secondary-font: 'Lato', sans-serif;
   --primary-color: #b8c8fb;
   --secondary-color: #9cb4ff;
-  --text-color: #a6a8c2;
 }
 
 html,
@@ -54,4 +53,23 @@ h6 {
   //     background: #6b7bad;
   //   }
   // }
+}
+
+.section-title {
+  font-size: 3.6em;
+  color: var(--primary-color);
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+
+    margin-left: 20px;
+  }
 }

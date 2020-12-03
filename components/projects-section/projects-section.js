@@ -7,7 +7,7 @@ import { projects } from './projects-section.data';
 const ProjectsSection = () => {
   return (
     <SectionWrapper flippedBackground className={styles.wrapper}>
-      <h3 className={styles.title}>Things I've made</h3>
+      <h3 className='section-title'>Things I've made</h3>
       <ProjectsGrid className={styles.projects} projects={projects} />
     </SectionWrapper>
   );

@@ -28,7 +28,7 @@ export default function Home() {
           <ProjectsSection />
         </Slide>
         <Slide>
-          <AboutSection />
+          <AboutSection setSlide={setSlide} />
         </Slide>
         <Slide>
           <ContactSection />

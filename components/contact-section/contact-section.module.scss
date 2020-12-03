@@ -1,0 +1,39 @@
+.page {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: #383b5e;
+  height: 670px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h4 {
+    font-size: 2.4em;
+    color: var(--secondary-color);
+  }
+  h3 {
+    margin-top: 8px;
+    font-size: 3.5em;
+    color: var(--primary-color);
+  }
+}
+
+.socials-container {
+  margin-top: 42px;
+
+  & > img {
+    height: 65px;
+  }
+}
+
+.email {
+  margin: 0 40px;
+}
