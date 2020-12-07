@@ -1,0 +1,120 @@
+@import '../../styles/mixins';
+
+.container {
+  position: relative;
+
+  width: 100%;
+
+  background-color: #454971;
+
+  border-radius: 0.5em;
+
+  padding: 54px 195px;
+
+  height: 670px;
+}
+
+.exit {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 55px;
+  height: 48px;
+  border-radius: 0.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #343758;
+}
+
+.image-container {
+  width: 25em;
+  height: 14em;
+}
+
+.head {
+  display: flex;
+}
+
+.info {
+  margin-top: -0.6em;
+  margin-left: 2.6em;
+
+  color: var(--primary-color);
+  & > h2 {
+    font-size: 3.1em;
+    margin-left: -2px;
+  }
+  & > p {
+    font-size: 1.5em;
+    opacity: 0.6;
+  }
+}
+
+.desc {
+  margin-top: 3.4em;
+  color: #7186c5;
+  font-size: 1.25em;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1.1em;
+
+  position: relative;
+
+  width: fit-content;
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      background-color: var(--primary-color);
+      height: 1px;
+    }
+  }
+
+  & > span {
+    font-size: 1.3em;
+    margin-left: 0.5em;
+  }
+}
+
+@include query(xlg) {
+  .container {
+    padding: 54px 98px;
+  }
+
+  .exit {
+    left: 10px;
+    top: 10px;
+  }
+}
+
+@include query(md) {
+  .container {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@include query(xsm) {
+  .container {
+    padding: 12px;
+  }
+}
