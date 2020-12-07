@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -70,4 +72,46 @@
 .technoligies-title {
   margin-top: 32px;
   font-size: 2.5em;
+}
+
+@include query(xlg) {
+  .wrapper {
+    font-size: 14px;
+  }
+
+  .technologies {
+    max-height: 25vh;
+    overflow: auto;
+  }
+}
+
+@include query(md) {
+  .image-container {
+    display: none;
+  }
+}
+
+@include query(xsm) {
+  .wrapper {
+    font-size: 12px;
+  }
+
+  .technoligies-title {
+    font-size: 2em;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+@include query(xxsm) {
+  .wrapper {
+    padding-top: 52px;
+    font-size: 9px;
+  }
+
+  .technologies {
+    max-height: 9em;
+  }
 }

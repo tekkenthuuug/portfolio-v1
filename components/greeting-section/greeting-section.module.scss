@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .wrapper {
   color: var(--primary-color);
 
@@ -44,4 +46,38 @@
   bottom: 60px;
   left: 50%;
   margin-left: -75px;
+}
+
+@include query(xlg) {
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+@include query(lg) {
+  .wrapper {
+    font-size: 13px;
+  }
+}
+
+@include query(md) {
+  .wrapper {
+    font-size: 11px;
+  }
+}
+
+@include query(xsm) {
+  .arrow {
+    display: none;
+  }
+
+  .wrapper {
+    padding-bottom: 32px;
+  }
+}
+
+@include query(xxsm) {
+  .wrapper {
+    font-size: 9px;
+  }
 }

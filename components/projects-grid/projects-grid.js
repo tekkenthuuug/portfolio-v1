@@ -1,18 +1,21 @@
 import React from 'react';
+import createClassName from '../../utils/createClassName';
 import styles from './projects-grid.module.scss';
 
-const ProjectsGrid = ({ projects, className }) => {
-  let containerClassName = styles.container;
-
-  if (className) {
-    containerClassName += ` ${className}`;
-  }
+const ProjectsGrid = ({ projects, className, onProjectClick }) => {
+  const containerClassName = createClassName({
+    [styles.container]: true,
+    [className]: !!className,
+  });
 
   return (
     <div className={containerClassName}>
       {projects.map(project => (
         <article key={project.id} className={styles['project-card']}>
-          <div className={styles['image-container']}>
+          <div
+            className={styles['image-container']}
+            onClick={() => onProjectClick(project)}
+          >
             <img src={project.image} className={styles.image} />
             <img src={project.image} className={styles['shadow-image']} />
           </div>

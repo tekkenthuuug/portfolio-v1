@@ -1,23 +1,29 @@
 import React from 'react';
+import { link } from '../../constants';
 import Grabber from '../grabber/grabber';
 import styles from './fixed-links.module.scss';
 
 const FixedLinks = ({ slide }) => {
   let containerClassName = styles.container;
 
-  if (slide.id > 0) {
-    containerClassName += ` ${styles['container-lower']}`;
-  }
+  const bottom =
+    slide.id > 0 ? (slide.id === 3 ? '-320px' : '-140px') : undefined;
 
   return (
-    <div className={containerClassName}>
+    <div className={containerClassName} style={{ bottom }}>
       <Grabber>
-        <img src='socials/github.svg' />
-        <img src='socials/linkedin.svg' />
-        <img src='socials/twitter.svg' />
+        <a href={link.github} target='_blank'>
+          <img src='socials/github.svg' />
+        </a>
+        <a href={link.linkedin} target='_blank'>
+          <img src='socials/linkedin.svg' />
+        </a>
+        <a href={link.fiverr} target='_blank'>
+          <img src='socials/fiverr.svg' />
+        </a>
       </Grabber>
       <Grabber>
-        <a href='mailto:sa.soto317@gmail.com' target='_blank'>
+        <a href={link.email} target='_blank'>
           <img src='socials/email.svg' />
         </a>
       </Grabber>

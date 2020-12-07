@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -5,4 +7,44 @@
 
 .projects {
   margin-top: 46px;
+}
+
+@include query(xlg) {
+  .wrapper {
+    font-size: 14px;
+  }
+
+  .projects {
+    max-height: 60vh;
+    overflow: auto;
+  }
+}
+
+@include query(md) {
+  .wrapper {
+    font-size: 12px;
+  }
+}
+
+@include query(xsm) {
+  .wrapper {
+    font-size: 14px;
+  }
+
+  .projects {
+    max-height: 460px;
+  }
+}
+
+@include query(xxsm) {
+  .wrapper {
+    font-size: 11px;
+    padding-top: 52px;
+  }
+
+  .projects {
+    margin-top: 24px;
+    font-size: 11px;
+    max-height: 380px;
+  }
 }

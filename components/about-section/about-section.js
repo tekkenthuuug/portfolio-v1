@@ -14,15 +14,21 @@ const AboutSection = ({ setSlide }) => {
             More About Me
           </h3>
           <p className={styles['about-me-text']}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
+            Hi, my name is Maksim and I'm ambitious second-year Computer Science
+            student with commercial experience of working in software
+            development field. I'm passionate about Web Development and
+            Teamwork. I was into programming since my young age and started
+            learning it passionatly two years ago, mostly spending my time on
+            personal projects. Recently started working as a freelancer on
+            Fiverr to get experience from commercial real world projects. It
+            went really well, since my clients are returning and leaving
+            positive feedback.
+          </p>
+          <p className={styles['about-me-text']}>
+            Currently based in Poland, Warsaw.
+          </p>
+          <p className={styles['about-me-text']}>
+            Looking for some job offers.
           </p>
         </div>
         <div className={styles['image-container']}>
@@ -34,7 +40,10 @@ const AboutSection = ({ setSlide }) => {
           Technologies I enjoy working with
         </h4>
       </div>
-      <TechnologiesGird technologies={technologies} />
+      <TechnologiesGird
+        technologies={technologies}
+        className={styles.technologies}
+      />
       <NextSectionArrow
         className={styles.arrow}
         onClick={() => setSlide({ id: 3 })}

@@ -1,4 +1,4 @@
-export const projects = [
+export const PROJECTS_DATA = [
   {
     id: 0,
     image: './projects/wallesave.png',

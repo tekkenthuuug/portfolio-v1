@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .wrapper {
   max-width: 1200px;
   width: 100%;
@@ -30,5 +32,51 @@
 
   &::before {
     transform: rotate(180deg);
+  }
+}
+
+@include query(xlg) {
+  .wrapper {
+    max-width: 900px;
+  }
+}
+
+@include query(lg) {
+  .wrapper {
+    max-width: 800px;
+  }
+}
+
+@include query(md) {
+  .wrapper {
+    max-width: 700px;
+  }
+}
+
+@include query(sm) {
+  .wrapper {
+    max-width: 580px;
+  }
+
+  .background {
+    position: relative;
+    min-height: 100vh;
+
+    &::before {
+      background-image: none;
+      background-color: #383b5e;
+    }
+  }
+}
+
+@include query(xsm) {
+  .wrapper {
+    max-width: 390px;
+  }
+}
+
+@include query(xxsm) {
+  .wrapper {
+    max-width: 310px;
   }
 }

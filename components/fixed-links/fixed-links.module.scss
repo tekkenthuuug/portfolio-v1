@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .container {
   position: fixed;
   bottom: -4px;
@@ -12,8 +14,14 @@
   padding: 0 60px;
 
   transition: bottom 0.25s ease-in 0.2s;
+
+  & img {
+    width: 32px;
+  }
 }
 
-.container-lower {
-  bottom: -140px;
+@include query(lg) {
+  .container {
+    display: none;
+  }
 }

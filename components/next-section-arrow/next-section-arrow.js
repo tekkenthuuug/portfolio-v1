@@ -1,12 +1,12 @@
 import React from 'react';
+import createClassName from '../../utils/createClassName';
 import styles from './next-section-arrow.module.scss';
 
 const NextSectionArrow = ({ className, ...otherProps }) => {
-  let svgClassName = styles.arrow;
-
-  if (className) {
-    svgClassName += ` ${className}`;
-  }
+  const svgClassName = createClassName({
+    [styles.arrow]: true,
+    [className]: !!className,
+  });
 
   return (
     <svg

@@ -1,0 +1,37 @@
+$breakpoints: (
+  'xlg': 1420px,
+  'lg': 1120px,
+  'md': 900px,
+  'sm': 800px,
+  'xsm': 600px,
+  'xxsm': 414px,
+);
+
+@mixin query($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin scroll {
+  &::-webkit-scrollbar {
+    width: 12px;
+
+    &-track,
+    &-thumb {
+      border-radius: 8px;
+    }
+
+    &-track {
+      background: #343758;
+    }
+
+    &-thumb {
+      background: #4d5285;
+
+      &:hover {
+        background: #6b7bad;
+      }
+    }
+  }
+}

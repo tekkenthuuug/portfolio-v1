@@ -1,9 +1,15 @@
 import React from 'react';
+import createClassName from '../../utils/createClassName';
 import styles from './technologies-grid.module.scss';
 
-const TechnologiesGird = ({ technologies }) => {
+const TechnologiesGird = ({ technologies, className }) => {
+  const containerClassName = createClassName({
+    [styles.container]: true,
+    [className]: !!className,
+  });
+
   return (
-    <div className={styles.container}>
+    <div className={containerClassName}>
       {technologies.map(technology => (
         <div
           key={technology.id}

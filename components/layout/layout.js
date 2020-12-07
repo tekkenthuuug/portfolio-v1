@@ -2,11 +2,11 @@ import React from 'react';
 import Head from 'next/head';
 import Header from '../header/header';
 
-const Layout = ({ children, slide }) => {
+const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Developer | Maksim Pautsina</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />

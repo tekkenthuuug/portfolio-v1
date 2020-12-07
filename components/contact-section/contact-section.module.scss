@@ -1,8 +1,37 @@
+@import '../../styles/mixins';
+
+@include query(xlg) {
+  .page {
+    font-size: 14px;
+  }
+}
+
+@include query(lg) {
+  .page {
+    font-size: 13px;
+  }
+}
+
+@include query(md) {
+  .container {
+    h4 {
+      max-width: 650px;
+    }
+  }
+}
+
+@include query(xsm) {
+  .page {
+    font-size: 11px;
+  }
+}
+
 .page {
   height: 100vh;
   background-color: var(--background-color);
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -27,10 +56,10 @@
 }
 
 .socials-container {
-  margin-top: 42px;
+  margin-top: 2.6em;
 
-  & > img {
-    height: 65px;
+  & img {
+    height: 4em;
   }
 }
 

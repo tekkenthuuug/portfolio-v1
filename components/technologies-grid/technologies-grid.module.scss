@@ -1,18 +1,24 @@
+@import '../../styles/mixins';
+
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12.2em, 1fr));
 
   grid-row-gap: 26px;
-  grid-column-gap: 50px;
+  grid-column-gap: 2em;
 
   place-items: center;
 
   margin-top: 26px;
+
+  @include scroll;
+
+  padding: 0 8px;
 }
 
 .technology-card {
-  height: 127px;
-  width: 196px;
+  height: 8em;
+  width: 12.2em;
 
   box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 6px;
 
@@ -29,6 +35,6 @@
 }
 
 .logo {
-  max-width: 56px;
-  max-height: 56px;
+  max-width: 3.5em;
+  max-height: 3.5em;
 }

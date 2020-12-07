@@ -1,4 +1,5 @@
 import React from 'react';
+import createClassName from '../../utils/createClassName';
 import styles from './section-wrapper.module.scss';
 
 const SectionWrapper = ({
@@ -7,15 +8,11 @@ const SectionWrapper = ({
   className,
   ...otherProps
 }) => {
-  let sectionClassName = styles.background;
-
-  if (flippedBackground) {
-    sectionClassName += ` ${styles.background180}`;
-  }
-
-  if (className) {
-    sectionClassName += ` ${className}`;
-  }
+  const sectionClassName = createClassName({
+    [styles.background]: true,
+    [styles.background180]: flippedBackground,
+    [className]: !!className,
+  });
 
   return (
     <section className={sectionClassName} {...otherProps}>
