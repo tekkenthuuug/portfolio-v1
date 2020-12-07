@@ -3,9 +3,8 @@ import NextSectionArrow from '../next-section-arrow/next-section-arrow';
 import SectionWrapper from '../section-wrapper/section-wrapper';
 import TechnologiesGird from '../technologies-grid/technologies-grid';
 import styles from './about-section.module.scss';
-import { technologies } from './about-section.data';
 
-const AboutSection = ({ setSlide }) => {
+const AboutSection = ({ setSlide, technologies }) => {
   return (
     <SectionWrapper className={styles.wrapper}>
       <div className={styles['about-me']}>

@@ -3,10 +3,8 @@ import styles from './projects-section.module.scss';
 import SectionWrapper from '../section-wrapper/section-wrapper';
 import ProjectsGrid from '../projects-grid/projects-grid';
 import DetailedProject from '../detailed-project/detailed-project';
-import { PROJECTS_DATA } from './projects-section.data';
 
-const ProjectsSection = () => {
-  const [projects] = useState(PROJECTS_DATA);
+const ProjectsSection = ({ projects }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
