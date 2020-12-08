@@ -2,56 +2,85 @@
   "projects": [
     {
       "id": 0,
-      "image": "./projects/wallesave.png",
-      "liveLink": "google.com",
-      "repoLink": "",
-      "name": "Wallesave",
-      "shortDesc": "Expenses & incomes tracker",
+      "image": "./projects/common-steam-games.png",
+      "link": "https://common-steam-games.vercel.app/",
+      "repositories": [
+        {
+          "id": 0,
+          "name": null,
+          "link": "https://github.com/tekkenthuuug/new-common-steam-games"
+        }
+      ],
+      "name": "CSG",
+      "shortDesc": "Steam utility",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "id": 1,
-      "image": "./projects/wallesave.png",
-      "liveLink": "google.com",
-      "repoLink": "",
-      "name": "Wallesave",
-      "shortDesc": "Expenses & incomes tracker",
+      "image": "./projects/the-riff-tool.png",
+      "link": "https://therifftool.com/",
+      "repositories": [],
+      "name": "The Riff Tool",
+      "shortDesc": "Youtube video looper",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "id": 2,
       "image": "./projects/wallesave.png",
-      "liveLink": "google.com",
-      "repoLink": "",
+      "link": "https://wallesave.netlify.app/",
+      "repositories": [],
       "name": "Wallesave",
-      "shortDesc": "Expenses & incomes tracker",
+      "shortDesc": "Expense & incomes tracker",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "id": 3,
-      "image": "./projects/wallesave.png",
-      "liveLink": "google.com",
-      "repoLink": "",
-      "name": "Wallesave",
-      "shortDesc": "Expenses & incomes tracker",
+      "image": "./projects/mikrogram.png",
+      "link": "https://mikrogram.netlify.app/",
+      "repositories": [
+        {
+          "id": 0,
+          "name": null,
+          "link": "https://github.com/tekkenthuuug/mikrogram"
+        }
+      ],
+      "name": "Mikrogram",
+      "shortDesc": "Image gallery",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "id": 4,
-      "image": "./projects/wallesave.png",
-      "liveLink": "google.com",
-      "repoLink": "",
-      "name": "Wallesave",
-      "shortDesc": "Expenses & incomes tracker",
+      "image": "./projects/candy-shop.png",
+      "link": "https://candy-shop-pz.netlify.app",
+      "repositories": [
+        {
+          "id": 0,
+          "name": "Front-end",
+          "link": "https://github.com/tekkenthuuug/candy-shop"
+        },
+        {
+          "id": 1,
+          "name": "Back-end",
+          "link": "https://github.com/tekkenthuuug/candy-shop-api"
+        }
+      ],
+      "name": "Candy Shop",
+      "shortDesc": "eCommerce app",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "id": 5,
-      "image": "./projects/wallesave.png",
-      "liveLink": "google.com",
-      "repoLink": "",
-      "name": "Wallesave",
-      "shortDesc": "Expenses & incomes tracker",
+      "image": "./projects/crown-clothing.png",
+      "link": "https://tekken-crown-live.herokuapp.com/",
+      "repositories": [
+        {
+          "id": 0,
+          "name": null,
+          "link": "https://github.com/tekkenthuuug/crown-clothing"
+        }
+      ],
+      "name": "Crown Clothing",
+      "shortDesc": "eCommerce app",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ]

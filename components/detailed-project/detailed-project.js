@@ -22,19 +22,28 @@ const DetailedProject = ({ project, onExitClick, className }) => {
         <div className={styles.info}>
           <h2>{project.name}</h2>
           <p>{project.shortDesc}</p>
-          {project.repoLink.length ? (
-            <a className={styles.link} href={project.repoLink} target='_blank'>
-              <img src='./folder.svg' />
-              <span>Repository</span>
-            </a>
+          {project.repositories.length ? (
+            project.repositories.map(repo => (
+              <a
+                className={styles.link}
+                href={repo.link}
+                key={repo.id}
+                target='_blank'
+              >
+                <img src='./folder.svg' />
+                <span>
+                  Repository {repo.name && <span>({repo.name})</span>}
+                </span>
+              </a>
+            ))
           ) : (
-            <div className={styles.link}>
+            <div className={`${styles.link} ${styles['closed-source']}`}>
               <img src='./lock.svg' />
               <span>Closed source</span>
             </div>
           )}
-          {project.liveLink.length && (
-            <a className={styles.link} href={project.liveLink} target='_blank'>
+          {project.link.length && (
+            <a className={styles.link} href={project.link} target='_blank'>
               <img src='./external-link.svg' />
               <span>See it live</span>
             </a>

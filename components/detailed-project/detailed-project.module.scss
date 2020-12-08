@@ -69,6 +69,8 @@
 
   width: fit-content;
 
+  cursor: pointer;
+
   &:hover {
     &::after {
       position: absolute;
@@ -85,6 +87,10 @@
     font-size: 1.3em;
     margin-left: 0.5em;
   }
+}
+
+.closed-source {
+  cursor: not-allowed;
 }
 
 @include query(xlg) {

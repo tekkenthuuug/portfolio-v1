@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FullPage, Slide } from 'react-full-page';
 import AboutSection from '../components/about-section/about-section';
 import ContactSection from '../components/contact-section/contact-section';
@@ -12,6 +12,7 @@ import technologies from '../data/technologies.json';
 
 export default function Home({ staticData }) {
   const [slide, setSlide] = useState({ id: null });
+
   return (
     <Layout slide={slide}>
       <FullPage
