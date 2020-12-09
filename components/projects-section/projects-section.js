@@ -39,7 +39,7 @@ const ProjectsSection = ({ projects }) => {
 
               setTimeout(() => {
                 setSelectedProject(null);
-              }, 2000);
+              }, 200);
             }}
           />
         </div>
