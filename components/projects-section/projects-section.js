@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './projects-section.module.scss';
 import SectionWrapper from '../section-wrapper/section-wrapper';
 import ProjectsGrid from '../projects-grid/projects-grid';
 import DetailedProject from '../detailed-project/detailed-project';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const ProjectsSection = ({ projects }) => {
   const router = useRouter();
+  const detailsRef = useRef(null);
 
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -25,12 +27,19 @@ const ProjectsSection = ({ projects }) => {
       containerClassName={styles.container}
     >
       {selectedProject !== null && (
-        <div className={styles['details-container']}>
+        <div className={styles['details-container']} ref={detailsRef}>
           <DetailedProject
             project={projects[selectedProject]}
             onExitClick={() => {
-              setSelectedProject(null);
               router.push({ query: {} });
+
+              detailsRef.current.classList.add(
+                styles['details-container--closing']
+              );
+
+              setTimeout(() => {
+                setSelectedProject(null);
+              }, 2000);
             }}
           />
         </div>
