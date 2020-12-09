@@ -6,6 +6,7 @@ const SectionWrapper = ({
   flippedBackground,
   children,
   className,
+  containerClassName: _containerClassName,
   ...otherProps
 }) => {
   const sectionClassName = createClassName({
@@ -14,9 +15,14 @@ const SectionWrapper = ({
     [className]: !!className,
   });
 
+  const containerClassName = createClassName({
+    [styles.container]: true,
+    [_containerClassName]: !!_containerClassName,
+  });
+
   return (
     <section className={sectionClassName} {...otherProps}>
-      <div className={styles.wrapper}>{children}</div>
+      <div className={containerClassName}>{children}</div>
     </section>
   );
 };

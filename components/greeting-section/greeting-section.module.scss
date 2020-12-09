@@ -1,5 +1,16 @@
 @import '../../styles/mixins';
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+$fade-time: 0.5s;
+
 .wrapper {
   color: var(--primary-color);
 
@@ -16,15 +27,27 @@
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   font-size: 1.2em;
+
+  opacity: 0;
+
+  animation: fadeIn $fade-time linear 0.4s forwards;
 }
 
 .name {
   font-size: 4.2em;
+
+  opacity: 0;
+
+  animation: fadeIn $fade-time linear 1.4s forwards;
 }
 
 .speciality {
   font-size: 4.3em;
   color: var(--secondary-color);
+
+  opacity: 0;
+
+  animation: fadeIn $fade-time linear 2.7s forwards;
 }
 
 .skills {
@@ -34,10 +57,18 @@
   max-width: 670px;
   font-size: 1.7em;
   color: #a6a8c2;
+
+  opacity: 0;
+
+  animation: fadeIn $fade-time linear 4.7s forwards;
 }
 
 .button {
   margin-top: 20px;
+
+  opacity: 0;
+
+  animation: fadeIn $fade-time linear 4.7s forwards;
 }
 
 .arrow {
@@ -46,6 +77,8 @@
   bottom: 60px;
   left: 50%;
   margin-left: -75px;
+
+  @include layoutDelay;
 }
 
 @include query(xlg) {

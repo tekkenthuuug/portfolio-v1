@@ -10,7 +10,7 @@ const DetailedProject = ({ project, onExitClick, className }) => {
   });
 
   return (
-    <div className={containerClassName}>
+    <article className={containerClassName}>
       <button className={styles.exit} onClick={onExitClick}>
         <img src='./back-arrow.svg' />
       </button>
@@ -20,7 +20,7 @@ const DetailedProject = ({ project, onExitClick, className }) => {
           className={styles['image-container']}
         />
         <div className={styles.info}>
-          <h2>{project.name}</h2>
+          <h1>{project.name}</h1>
           <p>{project.shortDesc}</p>
           {project.repositories.length ? (
             project.repositories.map(repo => (
@@ -51,7 +51,7 @@ const DetailedProject = ({ project, onExitClick, className }) => {
         </div>
       </div>
       <p className={styles.desc}>{project.desc}</p>
-    </div>
+    </article>
   );
 };
 

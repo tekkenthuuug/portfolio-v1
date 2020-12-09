@@ -10,7 +10,7 @@ const AboutSection = ({ setSlide, technologies }) => {
       <div className={styles['about-me']}>
         <div>
           <h3 className={`section-title ${styles['about-me-title']}`}>
-            More About Me
+            About Me
           </h3>
           <p className={styles['about-me-text']}>
             Hi, my name is Maksim and I'm ambitious second-year Computer Science

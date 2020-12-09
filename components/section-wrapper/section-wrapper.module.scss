@@ -1,6 +1,6 @@
 @import '../../styles/mixins';
 
-.wrapper {
+.container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -36,25 +36,25 @@
 }
 
 @include query(xlg) {
-  .wrapper {
+  .container {
     max-width: 900px;
   }
 }
 
 @include query(lg) {
-  .wrapper {
+  .container {
     max-width: 800px;
   }
 }
 
 @include query(md) {
-  .wrapper {
+  .container {
     max-width: 700px;
   }
 }
 
 @include query(sm) {
-  .wrapper {
+  .container {
     max-width: 580px;
   }
 
@@ -70,13 +70,13 @@
 }
 
 @include query(xsm) {
-  .wrapper {
+  .container {
     max-width: 390px;
   }
 }
 
 @include query(xxsm) {
-  .wrapper {
+  .container {
     max-width: 310px;
   }
 }

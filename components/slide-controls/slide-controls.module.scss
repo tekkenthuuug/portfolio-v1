@@ -8,7 +8,9 @@
   display: flex;
   flex-direction: column;
 
-  z-index: 100;
+  @include layoutDelay;
+
+  z-index: 40;
 }
 
 @include query(lg) {
@@ -21,7 +23,13 @@
   .container {
     flex-direction: row;
     left: 16px;
-    top: 24px;
+    top: 28px;
+  }
+}
+
+@include query(xsm) {
+  .container {
+    top: 22px;
   }
 }
 

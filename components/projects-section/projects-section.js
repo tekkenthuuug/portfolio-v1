@@ -19,28 +19,31 @@ const ProjectsSection = ({ projects }) => {
   }, [router]);
 
   return (
-    <SectionWrapper flippedBackground className={styles.wrapper}>
-      {selectedProject !== null ? (
-        <DetailedProject
-          project={projects[selectedProject]}
-          onExitClick={() => {
-            setSelectedProject(null);
-            router.push({ query: {} });
-          }}
-        />
-      ) : (
-        <>
-          <h3 className='section-title'>Things I've made</h3>
-          <ProjectsGrid
-            className={styles.projects}
-            projects={projects}
-            onProjectClick={project => {
-              setSelectedProject(project.id);
-              router.push({ query: { pid: project.id } });
+    <SectionWrapper
+      flippedBackground
+      className={styles.wrapper}
+      containerClassName={styles.container}
+    >
+      {selectedProject !== null && (
+        <div className={styles['details-container']}>
+          <DetailedProject
+            project={projects[selectedProject]}
+            onExitClick={() => {
+              setSelectedProject(null);
+              router.push({ query: {} });
             }}
           />
-        </>
+        </div>
       )}
+      <h3 className='section-title'>Things I've made</h3>
+      <ProjectsGrid
+        className={styles.projects}
+        projects={projects}
+        onProjectClick={project => {
+          setSelectedProject(project.id);
+          router.push({ query: { pid: project.id } });
+        }}
+      />
     </SectionWrapper>
   );
 };
