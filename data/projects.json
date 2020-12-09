@@ -13,7 +13,7 @@
       ],
       "name": "CSG",
       "shortDesc": "Steam utility",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "desc": "Common Steam Games is one of my most usable apps. Steam itself allows to compare only yours and your friends games. But if you have a lobby of 3+ people, this is not very convenient. We had the exact same problem and here is my solution. This is actually a second version of the app, where I have used Typescript, GraphQL, Appolo, Type-GraphQL on my own for the first time, and I've had a great experience building it. Also I've created my own package NPM type-steamapi with type defenitions for Steam API and partial Type-GraphQL support."
     },
     {
       "id": 1,
@@ -22,7 +22,7 @@
       "repositories": [],
       "name": "The Riff Tool",
       "shortDesc": "Youtube video looper",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "desc": "This youtube video looper was very interesting to build! It also includes some paid functionallity, but, to be honest, it is not very secure, since my client wanted not to use any databases for saving loops, that's why they are stored on client-side. And for the same reason there was used a service for handling subscription plans, instead of creating our own system. Generally, it is a recreation of any other youtube looper, but with a few key differences: use inputs for timings, instead of draggable points on the line, so you can be more accurate, playback speed can be changed without breaking loop timings, you can save your loops for future use."
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@
       "repositories": [],
       "name": "Wallesave",
       "shortDesc": "Expense & incomes tracker",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "desc": "This was my first paid project. Not only I was a developer here, but I've also been doing web and logo design. It is not very feature-rich project (customer decided to stop development process), but it has nice and responsive interface and different ways for authentication."
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
       ],
       "name": "Mikrogram",
       "shortDesc": "Image gallery",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "desc": "This is one of my learning projects. Here I've tried out theming (styled-components), localization (i18n), uploading images to the storage (firebase storage) and animations with framer-motion (used for grid animation). Authentication is handled by firebase. This project was very interesting to build, since there was a lot of new technologies for me. And not only they were new, they also were very useful for real world applications. I'm thinking about improving this project in a future, for example adding likes and comments for the post."
     },
     {
       "id": 4,
@@ -66,7 +66,7 @@
       ],
       "name": "Candy Shop",
       "shortDesc": "eCommerce app",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "desc": "This project was created for my university assignment. The main idea behind this assignment was to learn, how to work as a team, but we've also managed to create a good project. Here I've learned a lot of things about Flask and Python, as well as SQL Databases and React Context API. Application has authentication system, items search, items filtering and orders history."
     },
     {
       "id": 5,
@@ -81,7 +81,7 @@
       ],
       "name": "Crown Clothing",
       "shortDesc": "eCommerce app",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "desc": "This is one of my learning projects. Here I've been dealing with CSS-in-JS (styled-components), firebase, redux-saga, payment gateway (Stripe) for the first time. Authentication and storing application data is handled by Firebase Authenticaion and Firestore. At first, cart was stored only client-side (redux-persist), but then I moved it to Firestore, so cart is specific for the user account, not for device. I've also learned about reselect library and when it can be useful. Summarizing, I've really enjoyed using styled-components (it makes code really clean), firebase (no need to reacreate the same auth logic for every project). But even though I've understood basics of redux-saga, this concepts seemed to me a little overwhelming."
     }
   ]
 }
