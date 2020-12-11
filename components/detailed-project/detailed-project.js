@@ -2,6 +2,7 @@ import React from 'react';
 import ShadowImage from '../shadow-image/shadow-image';
 import createClassName from '../../utils/createClassName';
 import styles from './detailed-project.module.scss';
+import ExternalLink from '../external-link/external-link';
 
 const DetailedProject = ({ project, onExitClick, className }) => {
   const containerClassName = createClassName({
@@ -25,17 +26,16 @@ const DetailedProject = ({ project, onExitClick, className }) => {
           <p>{project.shortDesc}</p>
           {project.repositories.length ? (
             project.repositories.map(repo => (
-              <a
+              <ExternalLink
                 className={styles.link}
                 href={repo.link}
                 key={repo.id}
-                target='_blank'
               >
                 <img src='./folder.svg' />
                 <span>
                   Repository {repo.name && <span>({repo.name})</span>}
                 </span>
-              </a>
+              </ExternalLink>
             ))
           ) : (
             <div className={`${styles.link} ${styles['closed-source']}`}>
@@ -44,10 +44,10 @@ const DetailedProject = ({ project, onExitClick, className }) => {
             </div>
           )}
           {project.link.length && (
-            <a className={styles.link} href={project.link} target='_blank'>
+            <ExternalLink className={styles.link} href={project.link}>
               <img src='./external-link.svg' />
               <span>See it live</span>
-            </a>
+            </ExternalLink>
           )}
         </div>
       </div>
