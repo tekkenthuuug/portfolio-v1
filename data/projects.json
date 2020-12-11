@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 0,
-      "image": "./projects/common-steam-games.png",
+      "image": "common-steam-games.png",
       "link": "https://common-steam-games.vercel.app/",
       "repositories": [
         {
@@ -17,7 +17,7 @@
     },
     {
       "id": 1,
-      "image": "./projects/the-riff-tool.png",
+      "image": "the-riff-tool.png",
       "link": "https://therifftool.com/",
       "repositories": [],
       "name": "The Riff Tool",
@@ -26,7 +26,7 @@
     },
     {
       "id": 2,
-      "image": "./projects/wallesave.png",
+      "image": "wallesave.png",
       "link": "https://wallesave.netlify.app/",
       "repositories": [],
       "name": "Wallesave",
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "image": "./projects/mikrogram.png",
+      "image": "mikrogram.png",
       "link": "https://mikrogram.netlify.app/",
       "repositories": [
         {
@@ -50,7 +50,7 @@
     },
     {
       "id": 4,
-      "image": "./projects/candy-shop.png",
+      "image": "candy-shop.png",
       "link": "https://candy-shop-pz.netlify.app",
       "repositories": [
         {
@@ -70,7 +70,7 @@
     },
     {
       "id": 5,
-      "image": "./projects/crown-clothing.png",
+      "image": "crown-clothing.png",
       "link": "https://tekken-crown-live.herokuapp.com/",
       "repositories": [
         {

@@ -16,7 +16,8 @@ const DetailedProject = ({ project, onExitClick, className }) => {
       </button>
       <div className={styles.head}>
         <ShadowImage
-          src={project.image}
+          src={`./projects/${project.image}`}
+          alt={project.name}
           className={styles['image-container']}
         />
         <div className={styles.info}>
