@@ -14,14 +14,23 @@ export default function Home({ staticData }) {
   const [slide, setSlide] = useState({ id: null });
 
   useEffect(() => {
-    const tid = setTimeout(() => {
-      document.body.style.overflow = 'initial';
-      document.documentElement.style.overflow = 'initial';
+    let tid = null;
 
-      setSlide({ id: 0 });
-    }, 6000);
+    if (!localStorage.getItem('visited')) {
+      localStorage.setItem('visited', true);
 
-    return () => clearTimeout(tid);
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+
+      tid = setTimeout(() => {
+        document.body.style.overflow = 'initial';
+        document.documentElement.style.overflow = 'initial';
+
+        setSlide({ id: 0 });
+      }, 5000);
+    }
+
+    return () => tid && clearTimeout(tid);
   }, []);
 
   return (
