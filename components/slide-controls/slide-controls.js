@@ -25,13 +25,11 @@ const SlideControls = ({
   useEffect(() => {
     document.addEventListener('scroll', handleScroll);
 
-    handleScroll();
-
     return () => document.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
 
   useEffect(() => {
-    if (slideToScrollTo.id) {
+    if (slideToScrollTo.id !== null) {
       scrollToSlide(slideToScrollTo.id);
     }
   }, [slideToScrollTo]);
