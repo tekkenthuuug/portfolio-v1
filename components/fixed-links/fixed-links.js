@@ -1,6 +1,7 @@
 import React from 'react';
 import { link } from '../../constants';
 import Grabber from '../grabber/grabber';
+import ExternalLink from '../external-link/external-link';
 import styles from './fixed-links.module.scss';
 
 const FixedLinks = ({ slide }) => {
@@ -12,20 +13,20 @@ const FixedLinks = ({ slide }) => {
   return (
     <div className={containerClassName} style={{ bottom }}>
       <Grabber>
-        <a href={link.github} target='_blank'>
+        <ExternalLink href={link.github}>
           <img src='socials/github.svg' />
-        </a>
-        <a href={link.linkedin} target='_blank'>
+        </ExternalLink>
+        <ExternalLink href={link.linkedin}>
           <img src='socials/linkedin.svg' />
-        </a>
-        <a href={link.fiverr} target='_blank'>
+        </ExternalLink>
+        <ExternalLink href={link.fiverr}>
           <img src='socials/fiverr.svg' />
-        </a>
+        </ExternalLink>
       </Grabber>
       <Grabber>
-        <a href={link.email} target='_blank'>
+        <ExternalLink href={link.email}>
           <img src='socials/email.svg' />
-        </a>
+        </ExternalLink>
       </Grabber>
     </div>
   );

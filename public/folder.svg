@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22.385" height="17.16" viewBox="0 0 22.385 17.16">
-  <g id="folder" transform="translate(0 -47.619)">
-    <g id="Group_35" data-name="Group 35" transform="translate(0 47.619)">
-      <path id="Path_87" data-name="Path 87" d="M20.41,49.87H11.32L9.509,47.717a.274.274,0,0,0-.219-.1H1.975a2,2,0,0,0-1.975,2V62.783a2,2,0,0,0,1.975,1.995H20.41a2,2,0,0,0,1.975-1.995V51.865A2,2,0,0,0,20.41,49.87Z" transform="translate(0 -47.619)" fill="#b8c8fb"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="22.385" height="17.16"  xmlns:v="https://vecta.io/nano"><path d="M20.4 2.25h-9.1L9.51.098c-.054-.065-.134-.102-.22-.1H1.975a2 2 0 0 0-1.975 2v13.166a2 2 0 0 0 1.975 1.995H20.4a2 2 0 0 0 1.975-1.995V4.246a2 2 0 0 0-1.975-1.995z" fill="#b8c8fb"/></svg>

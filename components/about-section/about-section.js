@@ -31,7 +31,7 @@ const AboutSection = ({ setSlide, technologies }) => {
           </p>
         </div>
         <div className={styles['image-container']}>
-          <img src='./me.png' className={styles.image} />
+          <img src='./me.png' className={styles.image} alt='Maksim Pautsina' />
         </div>
       </div>
       <div>

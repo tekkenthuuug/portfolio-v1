@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './contact-section.module.scss';
 import { link } from '../../constants';
+import ExternalLink from '../external-link/external-link';
 
 const ContactSection = () => {
   return (
@@ -9,15 +10,15 @@ const ContactSection = () => {
         <h4>Found my knowledge valuable for you or your company?</h4>
         <h3>Contact me!</h3>
         <div className={styles['socials-container']}>
-          <a href={link.linkedin} target='_blank'>
+          <ExternalLink href={link.linkedin}>
             <img src='./socials/linkedin.svg' />
-          </a>
-          <a href={link.email} target='_blank'>
+          </ExternalLink>
+          <ExternalLink href={link.email}>
             <img src='./socials/email.svg' className={styles.email} />
-          </a>
-          <a href={link.fiverr} target='_blank'>
+          </ExternalLink>
+          <ExternalLink href={link.fiverr}>
             <img src='./socials/fiverr.svg' />
-          </a>
+          </ExternalLink>
         </div>
       </div>
     </div>

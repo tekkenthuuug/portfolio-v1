@@ -17,7 +17,11 @@ const TechnologiesGird = ({ technologies, className }) => {
           style={{ backgroundColor: technology.color }}
         >
           <div className={styles.name}>{technology.name}</div>
-          <img src={`./tech/${technology.logo}`} className={styles.logo} />
+          <img
+            src={`./tech/${technology.logo}`}
+            className={styles.logo}
+            alt={technology.name}
+          />
         </div>
       ))}
     </div>

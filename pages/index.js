@@ -13,6 +13,26 @@ import technologies from '../data/technologies.json';
 export default function Home({ staticData }) {
   const [slide, setSlide] = useState({ id: null });
 
+  useEffect(() => {
+    let tid = null;
+
+    if (!localStorage.getItem('visited')) {
+      localStorage.setItem('visited', true);
+
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+
+      tid = setTimeout(() => {
+        document.body.style.overflow = 'initial';
+        document.documentElement.style.overflow = 'initial';
+
+        setSlide({ id: 0 });
+      }, 5000);
+    }
+
+    return () => tid && clearTimeout(tid);
+  }, []);
+
   return (
     <Layout slide={slide}>
       <FullPage

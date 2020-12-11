@@ -14,7 +14,8 @@ const ProjectsGrid = ({ projects, className, onProjectClick }) => {
       {projects.map(project => (
         <article key={project.id} className={styles['project-card']}>
           <ShadowImage
-            src={project.image}
+            src={`./projects/${project.image}`}
+            alt={project.name}
             className={styles['image-container']}
             onClick={() => onProjectClick(project)}
           />

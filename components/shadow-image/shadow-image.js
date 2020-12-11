@@ -11,7 +11,11 @@ const ShadowImage = ({ className, ...otherProps }) => {
   return (
     <div className={imageContainerClassName}>
       <img className={styles.image} {...otherProps} />
-      <img className={styles['shadow-image']} src={otherProps.src} />
+      <img
+        className={styles['shadow-image']}
+        src={otherProps.src}
+        alt={otherProps.alt}
+      />
     </div>
   );
 };

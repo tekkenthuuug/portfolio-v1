@@ -32,6 +32,7 @@
 
 .projects {
   margin-top: 46px;
+  overflow: hidden;
 }
 
 @include query(xlg) {
@@ -41,7 +42,7 @@
 
   .projects {
     max-height: 60vh;
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 

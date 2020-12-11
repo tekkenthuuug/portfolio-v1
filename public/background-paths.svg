@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2242.5" height="900.069" viewBox="0 0 2242.5 900.069">
-  <g id="BackT" transform="translate(321.022 -7.758)">
-    <path id="Path_7" data-name="Path 7" d="M1921.478,971.61l-2242.5-900L1921.41,71.6Z" transform="translate(0 -63.783)" fill="#333655"/>
-    <path id="Path_6" data-name="Path 6" d="M1712.622,965.811-207.409,71.61l1920.021-.069Z" transform="translate(208.856 -63.783)" fill="#383b5e"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="2242.5" height="900.069"  xmlns:v="https://vecta.io/nano"><path d="M2242.5 900.07L0 .07 2242.432.06z" fill="#333655"/><path d="M2242.5 894.27L322.47.07 2242.5 0z" fill="#383b5e"/></svg>
