@@ -6,7 +6,6 @@ const SlideControls = ({
   getCurrentSlideIndex,
   scrollToSlide,
   slideToScrollTo,
-  ...p
 }) => {
   // scrolling is controlled by react-full-page,
   // but highlighting current section with own calculations,
@@ -22,11 +21,21 @@ const SlideControls = ({
     setSectionId(calculateSectionId(window.scrollY, window.innerHeight));
   };
 
+  const handleResize = () => {
+    scrollToSlide(slideToScrollTo.id);
+  };
+
   useEffect(() => {
     document.addEventListener('scroll', handleScroll);
 
     return () => document.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, [handleResize]);
 
   useEffect(() => {
     if (slideToScrollTo.id !== null) {
