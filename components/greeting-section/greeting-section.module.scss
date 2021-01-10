@@ -81,6 +81,12 @@ $fade-time: 0.5s;
   @include layoutDelay;
 }
 
+@include query-h(md) {
+  .wrapper {
+    font-size: 12px;
+  }
+}
+
 @include query(xlg) {
   .wrapper {
     font-size: 14px;
@@ -105,7 +111,7 @@ $fade-time: 0.5s;
   }
 
   .wrapper {
-    padding-bottom: 32px;
+    padding-bottom: 12vh;
   }
 }
 

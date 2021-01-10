@@ -35,6 +35,12 @@
   }
 }
 
+@include query-h(md) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
 @include query(xlg) {
   .container {
     max-width: 900px;

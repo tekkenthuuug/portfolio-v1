@@ -3,22 +3,29 @@ import styles from './projects-section.module.scss';
 import SectionWrapper from '../section-wrapper/section-wrapper';
 import ProjectsGrid from '../projects-grid/projects-grid';
 import DetailedProject from '../detailed-project/detailed-project';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 
 const ProjectsSection = ({ projects }) => {
-  const router = useRouter();
   const detailsRef = useRef(null);
 
   const [selectedProject, setSelectedProject] = useState(null);
 
-  useEffect(() => {
-    const { pid } = router.query;
-
-    if (pid && projects[pid]) {
-      setSelectedProject(pid);
+  const closeProjectDetails = () => {
+    if (!detailsRef.current) {
+      return;
     }
-  }, [router]);
+
+    detailsRef.current.classList.add(styles['details-container--closing']);
+
+    setTimeout(() => {
+      setSelectedProject(null);
+    }, 200);
+  };
+
+  useEffect(() => {
+    document.addEventListener('scroll', closeProjectDetails);
+
+    return () => document.removeEventListener('scroll', closeProjectDetails);
+  }, []);
 
   return (
     <SectionWrapper
@@ -30,17 +37,7 @@ const ProjectsSection = ({ projects }) => {
         <div className={styles['details-container']} ref={detailsRef}>
           <DetailedProject
             project={projects[selectedProject]}
-            onExitClick={() => {
-              router.push({ query: {} });
-
-              detailsRef.current.classList.add(
-                styles['details-container--closing']
-              );
-
-              setTimeout(() => {
-                setSelectedProject(null);
-              }, 200);
-            }}
+            onExitClick={closeProjectDetails}
           />
         </div>
       )}
@@ -50,7 +47,6 @@ const ProjectsSection = ({ projects }) => {
         projects={projects}
         onProjectClick={project => {
           setSelectedProject(project.id);
-          router.push({ query: { pid: project.id } });
         }}
       />
     </SectionWrapper>

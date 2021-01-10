@@ -54,7 +54,7 @@
 
 .desc {
   margin-top: 3.4em;
-  color: #7186c5;
+  color: var(--secondary-color);
   font-size: 1.25em;
 }
 
@@ -105,7 +105,7 @@
 
 @include query(md) {
   .container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
     display: flex;

@@ -4,7 +4,7 @@ import SectionWrapper from '../section-wrapper/section-wrapper';
 import TechnologiesGird from '../technologies-grid/technologies-grid';
 import styles from './about-section.module.scss';
 
-const AboutSection = ({ setSlide, technologies }) => {
+const AboutSection = ({ technologies }) => {
   return (
     <SectionWrapper className={styles.wrapper}>
       <div className={styles['about-me']}>
@@ -13,14 +13,14 @@ const AboutSection = ({ setSlide, technologies }) => {
             About Me
           </h3>
           <p className={styles['about-me-text']}>
-            Hi, my name is Maksim and I'm ambitious second-year Computer Science
+            Hi, my name is Maksim and I'm ambitious third-year Computer Science
             student with commercial experience of working in software
             development field. I'm passionate about Web Development and
             Teamwork. I was into programming since my young age and started
             learning it passionatly two years ago, mostly spending my time on
             personal projects. Recently started working as a freelancer on
             Fiverr to get experience from commercial real world projects. It
-            went really well, since my clients are returning and leaving
+            went really well, since my clients are returning and I receive
             positive feedback.
           </p>
           <p className={styles['about-me-text']}>
@@ -42,10 +42,6 @@ const AboutSection = ({ setSlide, technologies }) => {
       <TechnologiesGird
         technologies={technologies}
         className={styles.technologies}
-      />
-      <NextSectionArrow
-        className={styles.arrow}
-        onClick={() => setSlide({ id: 3 })}
       />
     </SectionWrapper>
   );

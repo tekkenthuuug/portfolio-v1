@@ -41,6 +41,10 @@
   margin: 7px;
   cursor: pointer;
 
+  &:hover {
+    background-color: #aaadce;
+  }
+
   transition: background-color 0.3s ease;
 }
 

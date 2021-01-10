@@ -31,12 +31,17 @@
 }
 
 .image-container {
-  width: 325px;
-  height: 325px;
+  // width: 325px;
+  // height: 325px;
+  width: 20em;
+  height: 20em;
+  //1440x900
 
   margin-left: 66px;
 
   position: relative;
+
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -47,9 +52,23 @@
     height: 100%;
 
     border: 1px solid #39a3b4;
+
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   $frame-offset: 5px;
+  $hover-frame-offset: 10px;
+
+  &:hover {
+    &::before {
+      top: $hover-frame-offset;
+      left: $hover-frame-offset;
+    }
+    &::after {
+      top: -$hover-frame-offset;
+      left: -$hover-frame-offset;
+    }
+  }
 
   &::before {
     top: $frame-offset;
@@ -72,6 +91,12 @@
 .technoligies-title {
   margin-top: 32px;
   font-size: 2.5em;
+}
+
+@include query-h(md) {
+  .wrapper {
+    font-size: 12px;
+  }
 }
 
 @include query(xlg) {
@@ -98,6 +123,7 @@
 @include query(xsm) {
   .wrapper {
     font-size: 12px;
+    padding-bottom: 12vh;
   }
 
   .technoligies-title {
@@ -106,10 +132,6 @@
 
   .arrow {
     display: none;
-  }
-
-  .technologies {
-    overflow: hidden;
   }
 }
 
@@ -121,5 +143,6 @@
 
   .technologies {
     max-height: 9em;
+    overflow: hidden;
   }
 }

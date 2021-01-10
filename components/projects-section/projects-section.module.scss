@@ -35,6 +35,12 @@
   overflow: hidden;
 }
 
+@include query-h(md) {
+  .wrapper {
+    font-size: 12px;
+  }
+}
+
 @include query(xlg) {
   .wrapper {
     font-size: 14px;
@@ -62,7 +68,12 @@
 
   .projects {
     overflow: hidden;
+    padding-right: 0;
     max-height: 470px;
+  }
+
+  .container {
+    padding-bottom: 12vh;
   }
 }
 

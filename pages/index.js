@@ -50,10 +50,7 @@ export default function Home({ staticData }) {
           <ProjectsSection projects={staticData.projects} />
         </Slide>
         <Slide>
-          <AboutSection
-            setSlide={setSlide}
-            technologies={staticData.technologies}
-          />
+          <AboutSection technologies={staticData.technologies} />
         </Slide>
         <Slide>
           <ContactSection />
